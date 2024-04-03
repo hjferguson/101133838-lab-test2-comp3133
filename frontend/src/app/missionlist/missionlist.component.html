@@ -4,9 +4,9 @@
 </div>
 
 
-<mat-grid-list cols="5" rowHeight="400px">
+<mat-grid-list cols="5" rowHeight="400px" gutterSize="50px">
   <mat-grid-tile *ngFor="let launch of filteredLaunches" class="mission-tile">
-    <mat-card>
+    <mat-card class="mission-card">
       <img mat-card-image *ngIf="launch.links.mission_patch_small" [src]="launch.links.mission_patch_small" [alt]="launch.mission_name" class="mission-patch">
       <mat-card-content class="mission-details">
         <h3>{{ launch.mission_name }}</h3>

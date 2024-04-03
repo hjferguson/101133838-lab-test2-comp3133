@@ -19,9 +19,9 @@
         <p *ngIf="missionDetails.links?.article_link"><strong>Read More:</strong> 
           <a [href]="missionDetails.links.article_link" target="_blank">Article Link</a>
         </p>
-        <p *ngIf="missionDetails.links?.video_link"><strong>Watch Launch:</strong> 
-          <a [href]="missionDetails.links.video_link" target="_blank">Video Link</a>
-        </p>
+        <div *ngIf="videoUrl" class="video-container">
+            <iframe [src]="videoUrl" frameborder="0" allowfullscreen class="video-iframe"></iframe>
+        </div>
       </mat-card-content>
     </mat-card>
   </div>
