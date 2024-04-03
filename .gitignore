@@ -1,0 +1,60 @@
+# Node
+node_modules/
+npm-debug.log
+npm-debug.log.*
+yarn-error.log
+yarn-debug.log
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Angular files
+/dist
+/tmp
+/out-tsc
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# MongoDB (if you're storing data locally)
+/data/db
+/data/configdb
+
+# GraphQL - if you have generated files or specific directories
+/graphql/generated/
+/graphql/schema.json
+
+# Other common directories to ignore
+coverage/
+/build/
+/docs/
+/temp/
