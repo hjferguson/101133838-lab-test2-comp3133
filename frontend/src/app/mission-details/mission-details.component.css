@@ -1,0 +1,44 @@
+.mission-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); 
+  }
+  
+  .mission-card {
+    width: 100%;
+    max-width: 800px; 
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+  }
+  
+  .mission-patch {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px; 
+    border-radius: 50%;
+  }
+  
+  h2 {
+    color: #7e57c2; 
+    text-align: center;
+  }
+  
+  p {
+    color: #333; 
+    line-height: 1.6;
+  }
+
+  .success {
+    color: #4CAF50;
+  }
+  
+  .failure {
+    color: #F44336; 
+  }
+  

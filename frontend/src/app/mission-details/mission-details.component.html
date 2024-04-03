@@ -1,0 +1,28 @@
+<div *ngIf="missionDetails" class="mission-details-container">
+    <mat-card class="mission-card">
+      <img mat-card-image *ngIf="missionDetails.links.mission_patch_small" 
+           [src]="missionDetails.links.mission_patch_small" 
+           [alt]="missionDetails.mission_name" 
+           class="mission-patch">
+      <mat-card-content>
+        <h2>{{ missionDetails.mission_name }}</h2>
+        <p><strong>Launch Year:</strong> {{ missionDetails.launch_year }}</p>
+        <p><strong>Mission Details:</strong> {{ missionDetails.details }}</p>
+        <p><strong>Rocket Name:</strong> {{ missionDetails.rocket?.rocket_name }}</p>
+        <p><strong>Rocket Type:</strong> {{ missionDetails.rocket?.rocket_type }}</p>
+        <p><strong>Launch Site:</strong> {{ missionDetails.launch_site?.site_name_long }}</p>
+        <p><strong>Launch Success:</strong> 
+          <span [ngClass]="{'success': missionDetails.launch_success, 'failure': !missionDetails.launch_success}">
+            {{ missionDetails.launch_success ? 'Yes' : 'No' }}
+          </span>
+        </p>
+        <p *ngIf="missionDetails.links?.article_link"><strong>Read More:</strong> 
+          <a [href]="missionDetails.links.article_link" target="_blank">Article Link</a>
+        </p>
+        <p *ngIf="missionDetails.links?.video_link"><strong>Watch Launch:</strong> 
+          <a [href]="missionDetails.links.video_link" target="_blank">Video Link</a>
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  
