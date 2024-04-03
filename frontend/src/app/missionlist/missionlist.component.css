@@ -68,9 +68,9 @@ mat-grid-list {
   grid {
     gap: 20px; 
   }
-} */
+}
 
-/* mat-grid-tile {
+mat-grid-tile {
   
   flex: 0 0 calc(33.333% - 20px); 
   box-sizing: border-box; 
