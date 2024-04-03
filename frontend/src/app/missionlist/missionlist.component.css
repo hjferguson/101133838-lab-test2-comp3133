@@ -4,13 +4,13 @@ html, body{
 }
 
 body {
-  background-color: #000 !important; /* Fallback color */
-  background-image: url('/assets/HDP_896.jpg') !important;
-  background-size: cover !important;
-  background-position: center !important;
-  background-attachment: fixed !important;
+  background-color: #000; /* Fallback color */
+  background-image: url('/assets/HDP_896.jpg');
+  background-size: auto; /* Default size for tiling */
+  background-repeat: repeat; /* This will tile the image */
+  background-attachment: fixed; /* Keep the image fixed during scroll */
+  background-position: center; /* Centers the image on the page */
 }
-
 
 
 .app-container {
@@ -19,6 +19,7 @@ body {
   align-items: center;
   min-height: 100vh;
   padding-top: 50px; 
+  z-index: 0;
 }
 
 
@@ -29,12 +30,13 @@ body {
   display: flex;
   justify-content: center;
   position: relative; 
+  margin-bottom: 45px;
 }
 
 .search-container input {
   width: 100%;
   padding: 10px 15px;
-  border: 1px solid #7e57c2;
+  border: 1px solid #442d6d;
   border-right: none;
   border-radius: 5px 0 0 5px;
 }
@@ -52,30 +54,30 @@ body {
 }
 
 .search-container button:hover {
-  background-color: #673ab7; 
+  background-color: #442d6d; 
 }
 
 
 mat-grid-list {
-  background-color: transparent;
+  background-color: transparent !important;
   padding: 20px;
   box-sizing: border-box;
 }
 
-mat-grid-list {
+/* mat-grid-list {
   grid {
     gap: 20px; 
   }
-}
+} */
 
-mat-grid-tile {
+/* mat-grid-tile {
   
   flex: 0 0 calc(33.333% - 20px); 
   box-sizing: border-box; 
   display: flex;
   justify-content: center;
   padding: 10px;
-}
+} */
 
 
 .mission-card {
@@ -85,7 +87,7 @@ mat-grid-tile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: transparent; 
+  background-color: rgba(255, 255, 255, 0.9); 
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   overflow: visible; 
@@ -112,32 +114,14 @@ mat-grid-tile {
 }
 
 .mission-details button{
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   background-color: #7e57c2;
   color: #ffffff;
   border-radius: 10%;
-  border-color: #000000;
-  border-width: 5px;
 }
 
 .mission-details button:hover{
-  background-color: #442d6d;
-  color: white;
-}
-
-
-
-.mission-card button {
-  background-color: transparent;
-  border: 1px solid #7e57c2;
-  border-radius: 20px;
-  padding: 5px 15px;
-  margin-top: 15px;
-  transition: all 0.3s ease;
-}
-
-.mission-card button:hover {
   background-color: #442d6d;
   color: white;
 }
